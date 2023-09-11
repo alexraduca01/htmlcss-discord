@@ -12,6 +12,30 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* colors */
+.txt-violet {
+    color: #7887d8;
+}
+.btn-white {
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    color: var(--color-primary);
+}
+.btn-black {
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    padding: 10px;
+    color: white;
+}
+.btn-purple {
+    border-radius: 20px;
+    background-color: #7887d8;
+    padding: 10px;
+    color: white;
 }
 
 /* utility */
@@ -37,7 +61,7 @@ ul {
     margin-top: 5px;
     list-style: none;
 }
-li {
+.li-horizontal {
     display: inline-block;
     margin: 5px 10px;
 }
@@ -56,7 +80,7 @@ ul + a {
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 1200px;
-    min-height: 500px;
+    min-height: 450px;
     color: var(--color-secondary);
 }
 .hero-txt {
@@ -75,17 +99,44 @@ h2 {
 .hero-buttons > a {
     margin: 0 20px;
 }
-.btn-white {
-    border-radius: 20px;
-    background-color: white;
+.container {
     padding: 10px;
-    color: var(--color-primary);
 }
-.btn-black {
-    border-radius: 20px;
+footer {
     background-color: var(--color-primary);
-    padding: 10px;
-    color: white;
+    max-width: 1200px;
+    min-height: 450px;
+    margin: 0 auto;
+    color: var(--color-secondary);
+}
+.top-footer {
+    font-size: 0.7em;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #7887d8;
+}
+.left-top > *{
+    margin-bottom: 15px;
+}
+.language > img {
+    width: 20px;
+}
+h3 {
+    font-size: 1.7em;
+}
+.social-logos > i {
+    margin: 0 5px;
+    font-size: 1.5em;
+}
+.top-footer > ul > li {
+    margin-bottom: 10px;
+}
+.bottom-footer {
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+.bottom-footer > img {
+    width: 100px;
 }
 /* Flex */
 .flex-general {
@@ -98,5 +149,18 @@ h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: ;
+    align-content: center;
+}
+.flex-section {
+    /* display: flex; */
+}
+.flex-top-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.flex-bottom-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
