@@ -6,9 +6,70 @@
 :root {
     --color-primary: #24272a;
     --color-secondary: #ffffff;
-    --utility-blue: #3b5ae6;
+    --utility-blue: #255EE9;
     --section-background: #f6f6f6;
 }
 body {
     font-family: 'Noto Sans', sans-serif;
+    max-width: 1200px;
+}
+
+/* utility */
+main {
+    margin: 0 auto;
+}
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color: var(--utility-blue);
+    padding: 10px;
+}
+.middle-box {
+    width: 80%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+li > a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+ul + a {
+    margin: 5px 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+#hero {
+    min-height: 600px;
+    padding: 50px;
+    text-align: center;
+}
+#hero > h2 {
+    margin: 30px 0;
+}
+.txt-margin {
+    margin: 30px 0;
+}
+.btn {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.btn2 {
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* Flex */
+.flex-general {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
 }
