@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #24272a;
+    --color-secondary: #ffffff;
+    --utility-blue: #3b5ae6;
+    --section-background: #f6f6f6;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
